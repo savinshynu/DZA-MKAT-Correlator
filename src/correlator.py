@@ -241,7 +241,7 @@ class Correlator:
             
             # parse out antenna information
             for ant_info in hf["antenna_positions"]:
-                # get an instalnce of Antenna class
+                # get an instance of Antenna class
                 ant_ob = Antenna(ant_info.decode())
                 if ant_ob.name in antenna_feng_map.keys():
                     ant_pos[ant_ob.name] = ant_ob.position_ecef # assign the corresponding ECEF coordinates in tuples
@@ -326,7 +326,7 @@ class Correlator:
         if ref_ant:
             ref_ecef = ant_pos[ref_ant]
         else:
-            # Use the the coordinates of the center of the arrya
+            # Use the the coordinates of the center of the array
             ref_ecef = (5109360.0, 2006852.5, -3238948.0)
         
         ant_pos_ecef = np.array(list(self.meta['antenna_positions'].values())) # Actual X, Y, Z antenna positions in ECEF (m)
