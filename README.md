@@ -1,5 +1,5 @@
 ### DZA Correlator for Meerkat
-A python correlator for cross correlating the per antenna voltages from the Meerakt radio telescope in the DADA format.
+A python correlator for cross correlating the per antenna voltages from the Meerkat radio telescope in the DADA format.
 
 Mainly consist of 3 parts:
 1. correlator.py - Correlator class reading the chunks of Meerkat voltage files and computing the correlated visibilities.
